@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+</head>
+<body>
+  <h1>JS Practice</h2>
+  <h2>Question 1</h2>
+  <p>Array: Create an array of five numbers and print all elements.</p>
+<h2>Question 2</h2>
+<p>Array: Create an array of three fruits and print the first and last elements.</p>
+<h2>Question 3</h2>
+<p>Array: Add "Mango" to the end of an array using push().</p>
+<h2>Question 4</h2>
+<p>Array: Find the length of the following array:
+javascript
+let numbers = [10, 20, 30, 40, 50];</p>
+<h2>Question 5</h2>
+<p>Function: Write a function that prints "Hello World".</p>
+<h2>Question 6</h2>
+<p>Function: Write a function that takes two numbers as parameters and prints their sum.</p>
+<h2>Question 7</h2>
+<p>Function: Write a function that takes a number and returns its square.</p>
+<h2>Question 8</h2>
+<p>Function: Write a function that checks whether a number is even or odd.</p>
+<h2>Question 9</h2>
+<p>Basic Function: Write a function to find the largest of two numbers.</p>
+<h2>Question 10</h2>
+<p>Basic Function: Write a function that takes a name as an argument and prints a welcome message.</p>
+  <h2>Question 11</h2>
+  <p>Object: Create a student object with name, age, and class properties. Print all three properties.</p>
+<h2>Question 12</h2>
+<p>Object: Create a car object with brand, model, and color properties. Print the car's brand.</p>
+<h2>Question 13</h2>
+<p>Object: Update the age of the following student object to 20 and print it.
+javascript
+let student = {
+name: "Ali",
+age: 18
+};</p>
+  <h2>Question 14</h2>
+<p>Array, Function, and Object: Create an object for a student with name and marks properties. Write a function that prints the student's name and marks.</p>
+  <script>
+    console.log("---- Question 1 ----")
+let number=["13", "25", "39", "46", "55"]
+    console.log(number)
+    
+    console.log("---- Question 2 ----")
+    let fruits=["Apple", "Banana", "Orange"]
+    console.log(fruits[0], fruits[2])
+    
+    console.log("---- Question 3 ----")
+let fruit=["Apple", "Banana", "Orange"]
+    fruit.push("Mango")
+    console.log(fruit)
+    
+    console.log("---- Question 4 ----")
+let numbers=["10" ,"20" ,"30", "40", "50"]
+    console.log(numbers.length)
+    
+    console.log("---- Question 5 ----")
+function sayit(){
+  console.log("Hello World")
+  }
+    sayit()
+    
+    console.log("---- Question 6 ----")
+function addnumber(){
+  let num1=Number(prompt("enter your first number"))
+  let num2=Number(prompt("enter your second number"))
+  console.log(num1 + num2)
+}
+    addnumber()
+    
+    console.log("---- Question 7 ----")
+function square(n){
+  return n*n
+  }
+    console.log(square(9))
+    
+    console.log("---- Question 8 ----")
+function evenorodd(number){
+  if (number % 2===0){
+    return "even";
+    }
+  else {
+    return "odd";
+    }
+  }
+    console.log(evenorodd(4))
+    
+    console.log("---- Question 9 ----")
+function largest(a,b){
+    return Math.max(a,b)}
+    console.log(largest(10,40))
+    
+    console.log("---- Question 10 ----")
+    function welcome(name){
+      console.log("welcome" + name)
+      }
+    welcome ("Nashrah")
+    
+    console.log("---- Question 11 ----")
+    let student={
+      name: "Sana",
+      age: 18,
+      class: 6
+        }
+    console.log(student.name, student.age, student.class)
+    
+    console.log("---- Question 12 ----")
+let car=["bmw", "3series,x5", "white"]
+    console.log(car[0]) 
+    
+    console.log("---- Question 13 ----")
+let students={
+  name: "Ahmed",
+    age: 18}
+    students.age= 20;
+    console.log(students)
+    
+    console.log("---- Question 14 ----")
+  let student2 = {
+  name: "Ali",
+  marks: 85
+};
+
+function printStudent(s) {
+  console.log("Name: " + s.name);
+  console.log("Marks: " + s.marks);
+}
+printStudent(student2);
+  </script>
+</body>
+</html>
